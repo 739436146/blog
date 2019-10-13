@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+
+  thymeleaf:
+    cache: false
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+    url: jdbc:mysql://127.0.0.1:3306/my_blog_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: nuc.edu.phg.blog.pojo
